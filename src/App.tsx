@@ -1,8 +1,9 @@
-import { useState } from 'react';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import TrustStrip from './components/TrustStrip';
 import ServicePrices from './components/ServicePrices';
+import AboutUs from './components/AboutUs';
+import PortfolioGallery from './components/PortfolioGallery';
 import BeforeAfterSlider from './components/BeforeAfterSlider';
 import CostEstimator from './components/CostEstimator';
 import FAQ from './components/FAQ';
@@ -18,12 +19,14 @@ export default function App() {
   };
 
   return (
-    <div className="min-h-screen bg-[#fafbfc] text-slate-800 flex flex-col font-sans selection:bg-amber-200 selection:text-slate-900">
+    <div className="min-h-screen bg-[#fcfaf7] text-stone-800 flex flex-col font-sans selection:bg-rose-200 selection:text-stone-900">
       <Navbar onOpenContact={scrollToContact} />
       <main className="flex-grow">
         <Hero onOpenContact={scrollToContact} />
         <TrustStrip />
         <ServicePrices onOpenContact={scrollToContact} />
+        <AboutUs />
+        <PortfolioGallery onOpenContact={scrollToContact} />
         <BeforeAfterSlider />
         <CostEstimator onOpenContact={scrollToContact} />
         <FAQ />

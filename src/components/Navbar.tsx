@@ -1,4 +1,4 @@
-import { Phone, Calendar, Heart } from 'lucide-react';
+import { Phone, Calendar } from 'lucide-react';
 
 interface NavbarProps {
   onOpenContact: () => void;
@@ -9,7 +9,7 @@ export default function Navbar({ onOpenContact }: NavbarProps) {
     <header className="sticky top-0 z-50 bg-[#fcfaf7]/95 backdrop-blur-md border-b border-stone-200/80 py-4 px-4 sm:px-8 shadow-xs">
       <div className="max-w-7xl mx-auto flex items-center justify-between">
         
-        {/* Brand Logo with Warm Leinen Badge */}
+        {/* Brand Logo */}
         <div className="flex items-center gap-3.5">
           <div className="w-10 h-10 rounded-full bg-[#f4efe8] border border-[#e8ded1] flex items-center justify-center text-stone-800 font-serif font-bold text-lg shadow-xs shrink-0">
             ✦
@@ -20,9 +20,11 @@ export default function Navbar({ onOpenContact }: NavbarProps) {
           </div>
         </div>
 
-        {/* Navigation Links */}
+        {/* Navigation Links with Über Uns & Portfolio Gallery */}
         <nav className="hidden md:flex items-center gap-8 text-xs font-semibold text-stone-600 uppercase tracking-widest">
-          <a href="#preise" className="hover:text-stone-900 transition-colors">Behandlungen & Preise</a>
+          <a href="#preise" className="hover:text-stone-900 transition-colors">Behandlungen</a>
+          <a href="#ueber-uns" className="hover:text-stone-900 transition-colors">Über Uns</a>
+          <a href="#galerie-grid" className="hover:text-stone-900 transition-colors">Portfolio</a>
           <a href="#galerie" className="hover:text-stone-900 transition-colors">Vorher / Nachher</a>
           <a href="#rechner" className="hover:text-stone-900 transition-colors">Style-Rechner</a>
           <a href="#faq" className="hover:text-stone-900 transition-colors">FAQ</a>
