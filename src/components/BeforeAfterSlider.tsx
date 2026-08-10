@@ -6,23 +6,23 @@ export default function BeforeAfterSlider() {
   const [sliderPos, setSliderPos] = useState(50);
 
   return (
-    <section id="galerie" className="py-20 bg-gradient-to-b from-[#fafbfc] via-[#f7f4ee] to-[#fafbfc] border-b border-amber-900/10">
+    <section id="galerie" className="py-20 bg-[#f7f3ed] border-b border-stone-200/80">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         <div className="text-center max-w-3xl mx-auto mb-12">
-          <span className="text-xs font-extrabold tracking-widest text-amber-900 uppercase bg-amber-100 border border-amber-300 px-3.5 py-1.5 rounded-full">
+          <span className="text-xs font-semibold tracking-widest text-stone-700 uppercase bg-[#fcfaf7] border border-[#e5d9c7] px-3.5 py-1.5 rounded-full">
             Ergebnis-Transformation
           </span>
-          <h2 className="font-serif text-3xl sm:text-4xl font-bold text-slate-900 mt-4">
+          <h2 className="font-serif text-3xl sm:text-4xl font-normal text-stone-900 mt-4">
             Vorher / Nachher Maniküre-Vergleich
           </h2>
-          <p className="text-slate-600 text-sm sm:text-base mt-2">
-            Ziehen Sie den Schieberegler auf dem Smartphone, um den Unterschied zwischen beanspruchten Naturnägeln und perfektem Gel-Finish zu sehen.
+          <p className="text-stone-600 text-sm sm:text-base mt-2 font-normal">
+            Ziehen Sie den Schieberegler, um den Unterschied zwischen beanspruchten Naturnägeln und perfektem Gel-Finish zu sehen.
           </p>
         </div>
 
         {/* Interactive Slider Container */}
-        <div className="max-w-3xl mx-auto relative aspect-video rounded-3xl overflow-hidden shadow-2xl border-4 border-[#fafbfc]">
+        <div className="max-w-3xl mx-auto relative aspect-video rounded-3xl overflow-hidden shadow-xl border-4 border-[#fcfaf7]">
           
           {/* After Image (Right Side) */}
           <img
@@ -30,8 +30,8 @@ export default function BeforeAfterSlider() {
             alt="Nachher: Makellose Gel-Nägel"
             className="absolute inset-0 w-full h-full object-cover"
           />
-          <span className="absolute top-4 right-4 bg-emerald-600 text-white font-extrabold text-xs px-3 py-1 rounded-full shadow-md z-10">
-            NACHHER: Perfektes Gel-Finish
+          <span className="absolute top-4 right-4 bg-stone-900 text-stone-50 font-bold text-xs px-3.5 py-1 rounded-full shadow-md z-10 uppercase tracking-wider">
+            NACHHER: Gel-Finish
           </span>
 
           {/* Before Image (Left Side clipped) */}
@@ -41,12 +41,12 @@ export default function BeforeAfterSlider() {
           >
             <img
               src={heroImg}
-              alt="Vorher: Unbehandelte Naturnägel"
+              alt="Vorher: Ungestaltete Naturnägel"
               className="absolute inset-0 w-full h-full object-cover filter contrast-75 brightness-90"
               style={{ width: '100%', maxWidth: 'none' }}
             />
-            <span className="absolute top-4 left-4 bg-slate-900 text-white font-extrabold text-xs px-3 py-1 rounded-full shadow-md z-10">
-              VORHER: Ungestaltete Nägel
+            <span className="absolute top-4 left-4 bg-stone-700 text-stone-50 font-bold text-xs px-3.5 py-1 rounded-full shadow-md z-10 uppercase tracking-wider">
+              VORHER: Naturnägel
             </span>
           </div>
 
@@ -55,7 +55,7 @@ export default function BeforeAfterSlider() {
             className="absolute top-0 bottom-0 w-1 bg-white cursor-ew-resize z-20 shadow-xl"
             style={{ left: `${sliderPos}%` }}
           >
-            <div className="absolute top-1/2 -translate-y-1/2 -translate-x-1/2 w-9 h-9 rounded-full bg-amber-800 text-white border-2 border-white flex items-center justify-center text-xs font-bold shadow-2xl">
+            <div className="absolute top-1/2 -translate-y-1/2 -translate-x-1/2 w-9 h-9 rounded-full bg-stone-900 text-stone-50 border-2 border-white flex items-center justify-center text-xs font-bold shadow-2xl">
               ↔
             </div>
           </div>

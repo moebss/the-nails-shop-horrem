@@ -1,5 +1,4 @@
-import { Check, Sparkles, ArrowRight } from 'lucide-react';
-import portfolioImg from '../images/portfolio_nails.jpg';
+import { Check, ArrowRight } from 'lucide-react';
 
 interface ServicePricesProps {
   onOpenContact: () => void;
@@ -18,7 +17,7 @@ export default function ServicePrices({ onOpenContact }: ServicePricesProps) {
       title: 'Auffüllen (Refill)',
       price: 'ab 35 €',
       time: '45–60 Min',
-      desc: 'Professionelles Auffüllen der Rauswuchses mit frischer Versiegelung.',
+      desc: 'Professionelles Auffüllen des Rauswuchses mit frischer Versiegelung.',
       highlights: ['Altschicht abtragen', 'Farbe neu wählen', 'Nagelschonenende Technik']
     },
     {
@@ -52,18 +51,18 @@ export default function ServicePrices({ onOpenContact }: ServicePricesProps) {
   ];
 
   return (
-    <section id="preise" className="py-20 bg-[#fafbfc] border-b border-amber-900/10">
+    <section id="preise" className="py-20 bg-[#fcfaf7] border-b border-stone-200/80">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <span className="text-xs font-extrabold tracking-widest text-amber-900 uppercase bg-amber-100 border border-amber-300 px-3.5 py-1.5 rounded-full">
+          <span className="text-xs font-semibold tracking-widest text-stone-700 uppercase bg-[#f4efe8] border border-[#e5d9c7] px-3.5 py-1.5 rounded-full">
             Verwöhnprogramm & Preisliste
           </span>
-          <h2 className="font-serif text-3xl sm:text-4xl lg:text-5xl font-bold text-slate-900 mt-4 text-balance">
+          <h2 className="font-serif text-3xl sm:text-4xl lg:text-5xl font-normal text-stone-900 mt-4 text-balance">
             Unsere Behandlungen & Preise
           </h2>
-          <p className="text-slate-600 text-base sm:text-lg mt-4 text-pretty font-normal">
+          <p className="text-stone-600 text-base sm:text-lg mt-4 text-pretty font-normal">
             Transparente Preise, hochwertige Markenprodukte und individuelle Beratung in Kerpen-Horrem.
           </p>
         </div>
@@ -71,20 +70,20 @@ export default function ServicePrices({ onOpenContact }: ServicePricesProps) {
         {/* Services Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {services.map((s, idx) => (
-            <div key={idx} className="bg-[#f7f4ee] border border-amber-900/10 rounded-3xl p-6 hover:border-amber-400 transition-all shadow-sm hover:shadow-md flex flex-col justify-between space-y-4">
-              <div className="space-y-3">
-                <div className="flex items-center justify-between border-b border-amber-900/10 pb-3">
-                  <h3 className="font-serif font-bold text-xl text-slate-900 leading-snug">{s.title}</h3>
-                  <span className="font-serif font-extrabold text-amber-900 text-lg shrink-0 ml-2">{s.price}</span>
+            <div key={idx} className="bg-[#f7f3ed] border border-[#e8ded1] rounded-3xl p-7 hover:border-stone-400 transition-all shadow-xs flex flex-col justify-between space-y-6">
+              <div className="space-y-4">
+                <div className="flex items-center justify-between border-b border-stone-300/60 pb-3">
+                  <h3 className="font-serif font-semibold text-xl text-stone-900 leading-snug">{s.title}</h3>
+                  <span className="font-serif font-bold text-stone-900 text-lg shrink-0 ml-2">{s.price}</span>
                 </div>
 
-                <span className="text-[11px] font-bold text-amber-800 uppercase tracking-wider block">Dauer: {s.time}</span>
-                <p className="text-xs text-slate-600 leading-relaxed font-normal">{s.desc}</p>
+                <span className="text-[11px] font-semibold text-stone-500 uppercase tracking-widest block">Dauer: {s.time}</span>
+                <p className="text-xs text-stone-600 leading-relaxed font-normal">{s.desc}</p>
 
-                <ul className="space-y-1.5 text-xs text-slate-700 font-medium pt-2">
+                <ul className="space-y-2 text-xs text-stone-700 font-medium pt-2">
                   {s.highlights.map((h, i) => (
                     <li key={i} className="flex items-center gap-2">
-                      <Check className="w-3.5 h-3.5 text-amber-700 shrink-0" />
+                      <Check className="w-3.5 h-3.5 text-stone-800 shrink-0" />
                       <span>{h}</span>
                     </li>
                   ))}
@@ -94,10 +93,10 @@ export default function ServicePrices({ onOpenContact }: ServicePricesProps) {
               <button
                 onClick={onOpenContact}
                 aria-label={`Termin für ${s.title} buchen`}
-                className="w-full bg-slate-900 hover:bg-slate-800 text-white font-bold text-xs py-3 rounded-2xl transition-all flex items-center justify-center gap-2 uppercase tracking-wider"
+                className="w-full bg-stone-900 hover:bg-stone-800 text-stone-50 font-bold text-xs py-3 rounded-full transition-all flex items-center justify-center gap-2 uppercase tracking-wider cursor-pointer"
               >
                 <span>Termin Buchen</span>
-                <ArrowRight className="w-3.5 h-3.5 text-amber-400" />
+                <ArrowRight className="w-3.5 h-3.5 text-rose-300" />
               </button>
             </div>
           ))}

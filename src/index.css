@@ -2,12 +2,16 @@
 
 @layer base {
   body {
-    font-family: 'Outfit', sans-serif;
+    font-family: 'Jost', sans-serif;
   }
-  h1, h2, h3, .font-serif {
-    font-family: 'Playfair Display', serif;
+  h1, h2, h3, .font-display, .font-serif {
+    font-family: 'Fraunces', serif;
+    font-optical-sizing: auto;
   }
 }
+
+/* Kreativrichtung: Professionell / Editorial Zurückhaltend / Companion / Durchdacht */
+/* Begründung: Boutique Nagelstudio mit Fokus auf Spa-Ruhe, feiner Ästhetik & Hygiene */
 
 .no-scrollbar::-webkit-scrollbar {
   display: none;
