@@ -24,7 +24,7 @@ export default function Navbar({ onOpenContact }: NavbarProps) {
         <nav className="hidden md:flex items-center gap-8 text-xs font-semibold text-stone-600 uppercase tracking-widest">
           <a href="#preise" className="hover:text-stone-900 transition-colors">Behandlungen</a>
           <a href="#ueber-uns" className="hover:text-stone-900 transition-colors">Über Uns</a>
-          <a href="#galerie-grid" className="hover:text-stone-900 transition-colors">Portfolio</a>
+          <a href="#instagram" className="hover:text-stone-900 transition-colors">Instagram</a>
           <a href="#galerie" className="hover:text-stone-900 transition-colors">Vorher / Nachher</a>
           <a href="#rechner" className="hover:text-stone-900 transition-colors">Style-Rechner</a>
           <a href="#faq" className="hover:text-stone-900 transition-colors">FAQ</a>
