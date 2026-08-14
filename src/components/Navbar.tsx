@@ -32,10 +32,11 @@ export default function Navbar({ onOpenContact }: NavbarProps) {
         </a>
 
         {/* Desktop Navigation Links */}
-        <nav className="hidden lg:flex items-center gap-7 text-xs font-semibold text-stone-700 uppercase tracking-wider">
+        <nav className="hidden lg:flex items-center gap-6 text-xs font-semibold text-stone-700 uppercase tracking-wider">
           <a href="#services" className="hover:text-[#b36b67] transition-colors whitespace-nowrap">Behandlungen</a>
           <a href="#ueber-uns" className="hover:text-[#b36b67] transition-colors whitespace-nowrap">Über Uns</a>
           <a href="#transformation" className="hover:text-[#b36b67] transition-colors whitespace-nowrap">Vorher / Nachher</a>
+          <a href="#instagram" className="hover:text-[#b36b67] transition-colors whitespace-nowrap">Instagram</a>
           <a href="#bewertungen" className="hover:text-[#b36b67] transition-colors whitespace-nowrap">Bewertungen</a>
           <a href="#rechner" className="hover:text-[#b36b67] transition-colors whitespace-nowrap">Preis-Rechner</a>
           <a href="#faq" className="hover:text-[#b36b67] transition-colors whitespace-nowrap">FAQ</a>
@@ -67,7 +68,7 @@ export default function Navbar({ onOpenContact }: NavbarProps) {
             aria-label="Menü öffnen"
             className="lg:hidden p-2 rounded-xl bg-[#ffffff] border border-[#ede4d6] text-stone-700 hover:text-stone-900 cursor-pointer"
           >
-            {mobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+            {mobileMenuOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
           </button>
         </div>
 
@@ -79,6 +80,7 @@ export default function Navbar({ onOpenContact }: NavbarProps) {
           <a href="#services" onClick={handleNavClick} className="block py-2 hover:text-[#b36b67]">Behandlungen</a>
           <a href="#ueber-uns" onClick={handleNavClick} className="block py-2 hover:text-[#b36b67]">Über Uns</a>
           <a href="#transformation" onClick={handleNavClick} className="block py-2 hover:text-[#b36b67]">Vorher / Nachher</a>
+          <a href="#instagram" onClick={handleNavClick} className="block py-2 hover:text-[#b36b67]">Instagram</a>
           <a href="#bewertungen" onClick={handleNavClick} className="block py-2 hover:text-[#b36b67]">Bewertungen</a>
           <a href="#rechner" onClick={handleNavClick} className="block py-2 hover:text-[#b36b67]">Preis-Rechner</a>
           <a href="#faq" onClick={handleNavClick} className="block py-2 hover:text-[#b36b67]">FAQ</a>
