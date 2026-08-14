@@ -13,14 +13,22 @@ export default function Hero({ onOpenContact }: HeroProps) {
   return (
     <section id="hero" className="relative min-h-screen w-full flex items-center justify-center overflow-hidden bg-[#faf7f2] pt-20 pb-16 lg:py-0 border-b border-[#ede4d6]">
       
-      {/* Soft Ambient Boutique Glow */}
-      <div className="absolute top-1/4 right-1/4 w-[500px] h-[500px] bg-[#f4dedd]/50 rounded-full blur-3xl pointer-events-none" />
-      <div className="absolute bottom-10 left-10 w-[400px] h-[400px] bg-[#ede4d6]/60 rounded-full blur-3xl pointer-events-none" />
+      {/* 100vh Full Bleed Boutique Photography with Soft Warm Linen Overlay */}
+      <div className="absolute inset-0 z-0">
+        <img
+          src={heroImg}
+          alt="The Nails Shop Horrem Atmosphäre"
+          className="w-full h-full object-cover object-center filter brightness-[0.92] contrast-[1.05] opacity-35 scale-105"
+        />
+        {/* Soft Warm Linen Gradient Overlay & Rose Glow */}
+        <div className="absolute inset-0 bg-gradient-to-t from-[#faf7f2] via-[#faf7f2]/75 to-[#faf7f2]/85" />
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-[#f4dedd]/50 via-transparent to-transparent pointer-events-none" />
+      </div>
 
       <div className="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 w-full text-center space-y-8 pt-12">
         
         {/* Eyebrow Pill */}
-        <div className="inline-flex items-center gap-2.5 bg-[#ffffff] border border-[#ede4d6] px-4 py-2 rounded-full text-xs font-semibold uppercase tracking-widest text-[#b36b67] shadow-xs">
+        <div className="inline-flex items-center gap-2.5 bg-[#ffffff]/90 border border-[#ede4d6] px-4 py-2 rounded-full text-xs font-semibold uppercase tracking-widest text-[#b36b67] shadow-xs backdrop-blur-md">
           <Sparkles className="w-3.5 h-3.5 text-[#b36b67]" />
           <span>BOUTIQUE NAGELSTUDIO • HAUPTSTRASSE 18 • KERPEN-HORREM</span>
         </div>
@@ -49,7 +57,7 @@ export default function Hero({ onOpenContact }: HeroProps) {
 
           <a
             href="tel:01721234567"
-            className="bg-[#ffffff] hover:bg-[#f5f0e6] text-stone-800 font-semibold text-base sm:text-lg px-7 py-4 sm:py-5 rounded-full border border-[#ede4d6] hover:border-[#b36b67]/40 shadow-xs transition-all flex items-center gap-2.5"
+            className="bg-[#ffffff]/90 hover:bg-[#ffffff] text-stone-800 font-semibold text-base sm:text-lg px-7 py-4 sm:py-5 rounded-full border border-[#ede4d6] hover:border-[#b36b67]/40 shadow-xs backdrop-blur-md transition-all flex items-center gap-2.5"
           >
             <Phone className="w-4 h-4 text-[#b36b67]" />
             <span className="tabular-nums">0172 1234567</span>
@@ -59,7 +67,7 @@ export default function Hero({ onOpenContact }: HeroProps) {
             href="https://wa.me/491721234567?text=Hallo!%20Ich%20m%C3%B6chte%20gerne%20einen%20Termin%20im%20The%20Nails%20Shop%20Horrem%20vereinbaren."
             target="_blank"
             rel="noopener noreferrer"
-            className="bg-[#ffffff] hover:bg-[#f5f0e6] text-stone-700 hover:text-stone-900 font-semibold text-base sm:text-lg px-6 py-4 sm:py-5 rounded-full border border-[#ede4d6] shadow-xs transition-all flex items-center gap-2"
+            className="bg-[#ffffff]/90 hover:bg-[#ffffff] text-stone-700 hover:text-stone-900 font-semibold text-base sm:text-lg px-6 py-4 sm:py-5 rounded-full border border-[#ede4d6] shadow-xs backdrop-blur-md transition-all flex items-center gap-2"
           >
             <Sparkles className="w-4 h-4 text-[#b36b67]" />
             <span>WhatsApp</span>
@@ -68,7 +76,7 @@ export default function Hero({ onOpenContact }: HeroProps) {
 
         {/* High-Impact Metric Strip */}
         <div className="pt-12 grid grid-cols-2 md:grid-cols-4 gap-4 text-center border-t border-[#ede4d6] max-w-4xl mx-auto">
-          <div className="bg-[#ffffff] p-4 rounded-2xl border border-[#ede4d6] shadow-xs">
+          <div className="bg-[#ffffff]/80 backdrop-blur-sm p-4 rounded-2xl border border-[#ede4d6] shadow-xs">
             <div className="flex items-center justify-center gap-1 text-[#b36b67] mb-1">
               {[...Array(5)].map((_, i) => (
                 <Star key={i} className="w-3.5 h-3.5 fill-[#b36b67]" />
@@ -78,12 +86,12 @@ export default function Hero({ onOpenContact }: HeroProps) {
             <span className="text-[11px] text-stone-500 font-semibold uppercase tracking-wider">100+ Bewertungen</span>
           </div>
 
-          <div className="bg-[#ffffff] p-4 rounded-2xl border border-[#ede4d6] shadow-xs">
+          <div className="bg-[#ffffff]/80 backdrop-blur-sm p-4 rounded-2xl border border-[#ede4d6] shadow-xs">
             <span className="font-serif text-2xl font-bold text-[#b36b67] block">500+ Farben</span>
             <span className="text-[11px] text-stone-500 font-semibold uppercase tracking-wider">Riesige Farbauswahl</span>
           </div>
 
-          <div className="bg-[#ffffff] p-4 rounded-2xl border border-[#ede4d6] shadow-xs">
+          <div className="bg-[#ffffff]/80 backdrop-blur-sm p-4 rounded-2xl border border-[#ede4d6] shadow-xs">
             <span className="font-serif text-2xl font-bold text-stone-900 block flex items-center justify-center gap-1">
               <ShieldCheck className="w-4 h-4 text-[#b36b67]" />
               <span>Hygiene</span>
@@ -91,7 +99,7 @@ export default function Hero({ onOpenContact }: HeroProps) {
             <span className="text-[11px] text-stone-500 font-semibold uppercase tracking-wider">Sterile Einzelwerkzeuge</span>
           </div>
 
-          <div className="bg-[#ffffff] p-4 rounded-2xl border border-[#ede4d6] shadow-xs">
+          <div className="bg-[#ffffff]/80 backdrop-blur-sm p-4 rounded-2xl border border-[#ede4d6] shadow-xs">
             <span className="font-serif text-2xl font-bold text-stone-900 block flex items-center justify-center gap-1">
               <MapPin className="w-4 h-4 text-[#b36b67]" />
               <span>Horrem</span>
