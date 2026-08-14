@@ -1,4 +1,4 @@
-import { Star, CheckCircle2, ShieldCheck, ArrowRight, Heart } from 'lucide-react';
+import { ArrowRight, Phone, Star, MapPin, Sparkles, ChevronDown, Heart, ShieldCheck } from 'lucide-react';
 import heroImg from '../images/hero_nails.jpg';
 
 interface HeroProps {
@@ -6,101 +6,111 @@ interface HeroProps {
 }
 
 export default function Hero({ onOpenContact }: HeroProps) {
+  const scrollToServices = () => {
+    document.getElementById('services')?.scrollIntoView({ behavior: 'smooth' });
+  };
+
   return (
-    <section className="relative overflow-hidden bg-[#fcfaf7] border-b border-stone-200/80">
+    <section id="hero" className="relative min-h-screen w-full flex items-center justify-center overflow-hidden bg-[#faf7f2] pt-20 pb-16 lg:py-0 border-b border-[#ede4d6]">
       
-      <div className="max-w-7xl mx-auto min-h-[calc(100vh-5rem)] flex flex-col lg:flex-row items-stretch">
+      {/* Soft Ambient Boutique Glow */}
+      <div className="absolute top-1/4 right-1/4 w-[500px] h-[500px] bg-[#f4dedd]/50 rounded-full blur-3xl pointer-events-none" />
+      <div className="absolute bottom-10 left-10 w-[400px] h-[400px] bg-[#ede4d6]/60 rounded-full blur-3xl pointer-events-none" />
+
+      <div className="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 w-full text-center space-y-8 pt-12">
         
-        {/* Left 50% Content Column */}
-        <div className="w-full lg:w-1/2 px-4 sm:px-6 lg:px-8 py-12 lg:py-20 flex flex-col justify-center">
-          
-          {/* Eyebrow Badge */}
-          <div className="inline-flex items-center gap-2.5 bg-[#f4efe8] border border-[#e5d9c7] px-4 py-1.5 rounded-full shadow-xs w-fit mb-6">
-            <div className="flex items-center gap-1 text-stone-700">
+        {/* Eyebrow Pill */}
+        <div className="inline-flex items-center gap-2.5 bg-[#ffffff] border border-[#ede4d6] px-4 py-2 rounded-full text-xs font-semibold uppercase tracking-widest text-[#b36b67] shadow-xs">
+          <Sparkles className="w-3.5 h-3.5 text-[#b36b67]" />
+          <span>BOUTIQUE NAGELSTUDIO • HAUPTSTRASSE 18 • KERPEN-HORREM</span>
+        </div>
+
+        {/* Massive Fraunces Display Headline */}
+        <h1 className="font-serif text-5xl sm:text-7xl lg:text-8xl font-normal text-stone-900 tracking-tight leading-[1.05] max-w-5xl mx-auto">
+          Perfekte Maniküre & <br />
+          <span className="italic text-[#b36b67]">sinnliche Eleganz</span>.
+        </h1>
+
+        {/* Atmospheric Subtitle */}
+        <p className="text-stone-600 text-base sm:text-xl lg:text-2xl font-normal leading-relaxed max-w-3xl mx-auto">
+          Willkommen bei <strong className="text-stone-900 font-semibold">The Nails Shop</strong> in Kerpen-Horrem. Wir zaubern makellose Neumodellagen, zartes Babyboomer-Design, langanhaltende Gel-Nägel & wohltuende Spa-Maniküre.
+        </p>
+
+        {/* Action CTAs */}
+        <div className="flex flex-wrap items-center justify-center gap-4 pt-4">
+          <button
+            onClick={onOpenContact}
+            aria-label="Wunschtermin anfragen"
+            className="bg-[#b36b67] hover:bg-[#9c5955] text-white font-bold text-base sm:text-lg px-8 sm:px-10 py-4 sm:py-5 rounded-full shadow-[0_8px_30px_rgba(179,107,103,0.3)] transition-all transform active:scale-98 flex items-center gap-3 cursor-pointer group uppercase tracking-wider"
+          >
+            <span>Wunschtermin Anfragen</span>
+            <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+          </button>
+
+          <a
+            href="tel:01721234567"
+            className="bg-[#ffffff] hover:bg-[#f5f0e6] text-stone-800 font-semibold text-base sm:text-lg px-7 py-4 sm:py-5 rounded-full border border-[#ede4d6] hover:border-[#b36b67]/40 shadow-xs transition-all flex items-center gap-2.5"
+          >
+            <Phone className="w-4 h-4 text-[#b36b67]" />
+            <span className="tabular-nums">0172 1234567</span>
+          </a>
+
+          <a
+            href="https://wa.me/491721234567?text=Hallo!%20Ich%20m%C3%B6chte%20gerne%20einen%20Termin%20im%20The%20Nails%20Shop%20Horrem%20vereinbaren."
+            target="_blank"
+            rel="noopener noreferrer"
+            className="bg-[#ffffff] hover:bg-[#f5f0e6] text-stone-700 hover:text-stone-900 font-semibold text-base sm:text-lg px-6 py-4 sm:py-5 rounded-full border border-[#ede4d6] shadow-xs transition-all flex items-center gap-2"
+          >
+            <Sparkles className="w-4 h-4 text-[#b36b67]" />
+            <span>WhatsApp</span>
+          </a>
+        </div>
+
+        {/* High-Impact Metric Strip */}
+        <div className="pt-12 grid grid-cols-2 md:grid-cols-4 gap-4 text-center border-t border-[#ede4d6] max-w-4xl mx-auto">
+          <div className="bg-[#ffffff] p-4 rounded-2xl border border-[#ede4d6] shadow-xs">
+            <div className="flex items-center justify-center gap-1 text-[#b36b67] mb-1">
               {[...Array(5)].map((_, i) => (
-                <Star key={i} className="w-3.5 h-3.5 fill-stone-800 text-stone-800" />
+                <Star key={i} className="w-3.5 h-3.5 fill-[#b36b67]" />
               ))}
             </div>
-            <span className="text-xs font-semibold text-stone-800 tracking-wider uppercase">
-              Boutique Nagelstudio Kerpen-Horrem
+            <span className="font-serif text-2xl font-bold text-stone-900 block">4.9 / 5.0</span>
+            <span className="text-[11px] text-stone-500 font-semibold uppercase tracking-wider">100+ Bewertungen</span>
+          </div>
+
+          <div className="bg-[#ffffff] p-4 rounded-2xl border border-[#ede4d6] shadow-xs">
+            <span className="font-serif text-2xl font-bold text-[#b36b67] block">500+ Farben</span>
+            <span className="text-[11px] text-stone-500 font-semibold uppercase tracking-wider">Riesige Farbauswahl</span>
+          </div>
+
+          <div className="bg-[#ffffff] p-4 rounded-2xl border border-[#ede4d6] shadow-xs">
+            <span className="font-serif text-2xl font-bold text-stone-900 block flex items-center justify-center gap-1">
+              <ShieldCheck className="w-4 h-4 text-[#b36b67]" />
+              <span>Hygiene</span>
             </span>
+            <span className="text-[11px] text-stone-500 font-semibold uppercase tracking-wider">Sterile Einzelwerkzeuge</span>
           </div>
 
-          {/* Headline - Editorial Fraunces Serif */}
-          <h1 className="font-serif text-4xl sm:text-5xl lg:text-6xl font-normal tracking-tight text-stone-900 text-balance leading-[1.12] mb-6">
-            Perfekte Maniküre & <span className="italic font-light text-stone-700">sinnvolle Eleganz</span> für Ihre Nägel.
-          </h1>
-
-          {/* Subline */}
-          <p className="text-base sm:text-lg text-stone-600 text-pretty mb-8 max-w-xl font-normal leading-relaxed">
-            Bei <strong className="text-stone-900 font-semibold">The Nails Shop Horrem</strong> erwarten Sie makellose Gel- & Acrylnägel, zartes Babyboomer-Design und wohltuende Handpflege in entspannter Spa-Atmosphäre.
-          </p>
-
-          {/* Primary CTA + WhatsApp Button */}
-          <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-4 mb-10">
-            <button
-              onClick={onOpenContact}
-              aria-label="Wunschtermin vereinbaren"
-              className="bg-stone-900 hover:bg-stone-800 text-stone-50 font-bold text-base px-8 py-4 rounded-full shadow-md transition-all transform active:scale-98 flex items-center justify-center gap-3 cursor-pointer group uppercase tracking-wider"
-            >
-              <span>Wunschtermin Buchen</span>
-              <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform text-rose-300" />
-            </button>
-
-            <a
-              href="https://wa.me/491721234567?text=Hallo!%20Ich%20m%C3%B6chte%20gerne%20einen%20Termin%20im%20The%20Nails%20Shop%20Horrem%20vereinbaren."
-              target="_blank"
-              rel="noopener noreferrer"
-              className="bg-[#f4efe8] hover:bg-[#eae0d2] text-stone-800 font-semibold text-base px-6 py-4 rounded-full border border-[#e2d5c3] shadow-xs transition-colors text-center flex items-center justify-center gap-2 uppercase tracking-wider"
-            >
-              <span>WhatsApp Direkt</span>
-            </a>
+          <div className="bg-[#ffffff] p-4 rounded-2xl border border-[#ede4d6] shadow-xs">
+            <span className="font-serif text-2xl font-bold text-stone-900 block flex items-center justify-center gap-1">
+              <MapPin className="w-4 h-4 text-[#b36b67]" />
+              <span>Horrem</span>
+            </span>
+            <span className="text-[11px] text-stone-500 font-semibold uppercase tracking-wider">Hauptstraße 18</span>
           </div>
-
-          {/* Trust Checkmarks */}
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 text-xs font-semibold text-stone-700 border-t border-stone-200/80 pt-6">
-            <div className="flex items-center gap-2">
-              <CheckCircle2 className="w-4 h-4 text-stone-800 shrink-0" />
-              <span>Sterile Instrumente</span>
-            </div>
-            <div className="flex items-center gap-2">
-              <CheckCircle2 className="w-4 h-4 text-stone-800 shrink-0" />
-              <span>Schonender Nagelschutz</span>
-            </div>
-            <div className="flex items-center gap-2">
-              <ShieldCheck className="w-4 h-4 text-stone-800 shrink-0" />
-              <span>Qualitäts-Garantie</span>
-            </div>
-          </div>
-
         </div>
 
-        {/* Right 50% Clean Image Column */}
-        <div className="w-full lg:w-1/2 relative min-h-[450px] lg:min-h-full overflow-hidden bg-[#f4efe8]">
-          <img
-            src={heroImg}
-            alt="The Nails Shop Horrem Luxus Maniküre"
-            className="absolute inset-0 w-full h-full object-cover object-center"
-          />
-          <div className="absolute inset-0 bg-gradient-to-t from-[#fcfaf7] via-transparent to-transparent lg:hidden" />
-          
-          {/* Floating Badge */}
-          <div className="absolute bottom-8 left-8 right-8 lg:left-auto lg:right-8 lg:max-w-xs bg-[#fcfaf7]/95 backdrop-blur-md p-4 rounded-2xl border border-stone-200 shadow-xl z-20">
-            <div className="flex items-center gap-3">
-              <div className="w-10 h-10 rounded-full bg-[#f4efe8] text-stone-800 flex items-center justify-center font-bold text-lg shrink-0">
-                <Heart className="w-4 h-4 text-rose-700" />
-              </div>
-              <div>
-                <p className="text-xs font-bold text-stone-900 uppercase tracking-wider">Erholung & Schönheit</p>
-                <p className="text-[11px] text-stone-600 font-normal mt-0.5">Zentral gelegen in Kerpen-Horrem</p>
-              </div>
-            </div>
-          </div>
-
-        </div>
+        {/* Scroll Indicator */}
+        <button
+          onClick={scrollToServices}
+          className="pt-6 inline-flex flex-col items-center gap-1 text-stone-400 hover:text-stone-700 transition-colors cursor-pointer"
+          aria-label="Zu den Behandlungen scrollen"
+        >
+          <span className="text-[10px] uppercase tracking-widest font-semibold">Behandlungen entdecken</span>
+          <ChevronDown className="w-4 h-4 animate-bounce text-[#b36b67]" />
+        </button>
 
       </div>
-
     </section>
   );
 }
