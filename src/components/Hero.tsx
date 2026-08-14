@@ -1,4 +1,4 @@
-import { ArrowRight, Phone, Star, MapPin, Sparkles, ChevronDown, ShieldCheck } from 'lucide-react';
+import { ArrowRight, Phone, Star, MapPin, Sparkles, ShieldCheck } from 'lucide-react';
 import heroImg from '../images/hero_nails.jpg';
 
 interface HeroProps {
@@ -6,10 +6,6 @@ interface HeroProps {
 }
 
 export default function Hero({ onOpenContact }: HeroProps) {
-  const scrollToServices = () => {
-    document.getElementById('services')?.scrollIntoView({ behavior: 'smooth' });
-  };
-
   return (
     <section id="hero" className="relative min-h-screen w-full flex items-center justify-center overflow-hidden bg-[#faf7f2] pt-32 pb-20 sm:pt-36 sm:pb-24 border-b border-[#ede4d6]">
       
@@ -107,16 +103,6 @@ export default function Hero({ onOpenContact }: HeroProps) {
             <span className="text-[11px] text-stone-500 font-semibold uppercase tracking-wider">Hauptstraße 18</span>
           </div>
         </div>
-
-        {/* Scroll Indicator */}
-        <button
-          onClick={scrollToServices}
-          className="pt-6 inline-flex flex-col items-center gap-1 text-stone-400 hover:text-stone-700 transition-colors cursor-pointer"
-          aria-label="Zu den Behandlungen scrollen"
-        >
-          <span className="text-[10px] uppercase tracking-widest font-semibold">Behandlungen entdecken</span>
-          <ChevronDown className="w-4 h-4 animate-bounce text-[#b36b67]" />
-        </button>
 
       </div>
     </section>
