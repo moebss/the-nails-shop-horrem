@@ -1,4 +1,4 @@
-import { ArrowRight, Phone, Star, MapPin, Sparkles, ChevronDown, Heart, ShieldCheck } from 'lucide-react';
+import { ArrowRight, Phone, Star, MapPin, Sparkles, ChevronDown, ShieldCheck } from 'lucide-react';
 import heroImg from '../images/hero_nails.jpg';
 
 interface HeroProps {
@@ -28,7 +28,7 @@ export default function Hero({ onOpenContact }: HeroProps) {
         {/* Massive Fraunces Display Headline */}
         <h1 className="font-serif text-5xl sm:text-7xl lg:text-8xl font-normal text-stone-900 tracking-tight leading-[1.05] max-w-5xl mx-auto">
           Perfekte Maniküre & <br />
-          <span className="italic text-[#b36b67]">sinnliche Eleganz</span>.
+          <span className="text-[#b36b67]">sinnliche Eleganz</span>.
         </h1>
 
         {/* Atmospheric Subtitle */}
