@@ -36,7 +36,7 @@ export default function AboutUs() {
             </span>
 
             <h2 className="font-serif text-3xl sm:text-4xl lg:text-5xl font-normal text-stone-900 leading-tight">
-              Ihr Ort für Entspannung & <span className="italic text-stone-700">perfekte Nägel</span>
+              Ihr Ort für Entspannung & <span className="text-stone-700">perfekte Nägel</span>
             </h2>
 
             <p className="text-stone-600 text-sm sm:text-base leading-relaxed font-normal">

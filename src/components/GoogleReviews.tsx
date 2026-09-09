@@ -85,7 +85,7 @@ export default function GoogleReviews() {
                   ))}
                 </div>
 
-                <p className="text-xs text-stone-700 leading-relaxed italic font-normal">
+                <p className="text-xs text-stone-700 leading-relaxed font-normal">
                   "{r.text}"
                 </p>
               </div>
@@ -96,7 +96,7 @@ export default function GoogleReviews() {
         {/* Google Maps Link CTA */}
         <div className="mt-12 text-center">
           <a
-            href="https://maps.google.com/?q=The+Nails+Shop+Horrem+Mitteleichen+1+Kerpen"
+            href="https://maps.google.com/?q=The+Nails+Shop+Bahnhofstraße+2+50169+Kerpen"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 bg-stone-900 hover:bg-stone-800 text-stone-50 font-bold text-xs px-6 py-3 rounded-full transition-all uppercase tracking-wider shadow-xs"

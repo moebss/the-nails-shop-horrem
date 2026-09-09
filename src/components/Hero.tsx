@@ -52,15 +52,15 @@ export default function Hero({ onOpenContact }: HeroProps) {
           </button>
 
           <a
-            href="tel:01721234567"
+            href="tel:015129429936"
             className="bg-[#ffffff]/90 hover:bg-[#ffffff] text-stone-800 font-semibold text-base sm:text-lg px-7 py-4 sm:py-5 rounded-full border border-[#ede4d6] hover:border-[#b36b67]/40 shadow-xs backdrop-blur-md transition-all flex items-center gap-2.5"
           >
             <Phone className="w-4 h-4 text-[#b36b67]" />
-            <span className="tabular-nums">0172 1234567</span>
+            <span className="tabular-nums">0151 29429936</span>
           </a>
 
           <a
-            href="https://wa.me/491721234567?text=Hallo!%20Ich%20m%C3%B6chte%20gerne%20einen%20Termin%20im%20The%20Nails%20Shop%20Horrem%20vereinbaren."
+            href="https://wa.me/4915129429936?text=Hallo!%20Ich%20m%C3%B6chte%20gerne%20einen%20Termin%20im%20The%20Nails%20Shop%20Horrem%20vereinbaren."
             target="_blank"
             rel="noopener noreferrer"
             className="bg-[#ffffff]/90 hover:bg-[#ffffff] text-stone-700 hover:text-stone-900 font-semibold text-base sm:text-lg px-6 py-4 sm:py-5 rounded-full border border-[#ede4d6] shadow-xs backdrop-blur-md transition-all flex items-center gap-2"

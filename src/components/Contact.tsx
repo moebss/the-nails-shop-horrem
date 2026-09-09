@@ -22,7 +22,7 @@ export default function Contact() {
             </span>
 
             <h2 className="font-serif text-3xl sm:text-4xl lg:text-5xl font-normal text-stone-900 leading-tight">
-              Vereinbaren Sie jetzt Ihren <span className="italic text-stone-700">Verwöhn-Termin</span>
+              Vereinbaren Sie jetzt Ihren <span className="text-stone-700">Verwöhn-Termin</span>
             </h2>
 
             <p className="text-stone-600 text-sm sm:text-base leading-relaxed">
@@ -34,7 +34,7 @@ export default function Contact() {
                 <MapPin className="w-5 h-5 text-stone-800 shrink-0" />
                 <div>
                   <span className="font-bold text-stone-900 block text-sm">Adresse:</span>
-                  <span>Hauptstraße, 50169 Kerpen-Horrem</span>
+                  <span>Bahnhofstraße 2, 50169 Kerpen-Horrem</span>
                 </div>
               </div>
 
@@ -42,7 +42,7 @@ export default function Contact() {
                 <Phone className="w-5 h-5 text-stone-800 shrink-0" />
                 <div>
                   <span className="font-bold text-stone-900 block text-sm">Telefon / WhatsApp:</span>
-                  <span>0172 1234567</span>
+                  <a href="tel:015129429936" className="hover:underline">0151 29429936</a>
                 </div>
               </div>
 

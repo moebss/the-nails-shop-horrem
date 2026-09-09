@@ -30,8 +30,8 @@ export default function Footer({ onOpenLegal }: FooterProps) {
         {/* Col 3 */}
         <div className="space-y-2">
           <span className="font-bold text-stone-900 uppercase tracking-wider text-xs block">Studio & Zeiten</span>
-          <p className="text-stone-500">Hauptstraße 18, 50169 Kerpen-Horrem</p>
-          <p className="text-stone-500">Tel: <a href="tel:01721234567" className="text-stone-800 hover:text-[#b36b67] underline">0172 1234567</a></p>
+          <p className="text-stone-500">Bahnhofstraße 2, 50169 Kerpen-Horrem</p>
+          <p className="text-stone-500">Tel: <a href="tel:015129429936" className="text-stone-800 hover:text-[#b36b67] underline">0151 29429936</a></p>
           <p className="text-stone-500">Mo – Fr: 09:00 – 19:00 Uhr<br />Sa: 09:00 – 17:00 Uhr</p>
         </div>
 

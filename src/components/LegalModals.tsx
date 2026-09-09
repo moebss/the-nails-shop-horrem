@@ -60,13 +60,13 @@ export default function LegalModals({ type, onClose }: LegalModalsProps) {
               <p>
                 The Nails Shop Horrem<br />
                 Inhaberin: The Nails Shop Team<br />
-                Hauptstraße 18<br />
+                Bahnhofstraße 2<br />
                 50169 Kerpen-Horrem
               </p>
               
               <h3 className="font-serif font-bold text-stone-900 text-lg pt-2">Kontakt</h3>
               <p>
-                Telefon: 0172 1234567<br />
+                Telefon: 0151 29429936<br />
                 E-Mail: kontakt@the-nails-shop-horrem.de
               </p>
               
@@ -92,9 +92,9 @@ export default function LegalModals({ type, onClose }: LegalModalsProps) {
               <h3 className="font-serif font-bold text-stone-900 text-lg pt-2">2. Verantwortliche Stelle</h3>
               <p>
                 The Nails Shop Horrem<br />
-                Hauptstraße 18<br />
+                Bahnhofstraße 2<br />
                 50169 Kerpen-Horrem<br />
-                Telefon: 0172 1234567
+                Telefon: 0151 29429936
               </p>
               
               <h3 className="font-serif font-bold text-stone-900 text-lg pt-2">3. Datenerfassung auf dieser Website</h3>

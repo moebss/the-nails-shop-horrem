@@ -34,16 +34,15 @@ export default function BeforeAfterSlider() {
             Nachher: Babyboomer Ombré
           </span>
 
-          {/* Before Image (Left Side clipped) */}
+          {/* Before Image (Left Side clipped cleanly via clipPath) */}
           <div
-            className="absolute inset-0 overflow-hidden"
-            style={{ width: `${sliderPos}%` }}
+            className="absolute inset-0 overflow-hidden pointer-events-none"
+            style={{ clipPath: `inset(0 ${100 - sliderPos}% 0 0)` }}
           >
             <img
               src={imgNeumodellage}
               alt="Vorher: Ausgangszustand"
-              className="absolute inset-0 w-full h-full object-cover filter contrast-90 brightness-95"
-              style={{ width: '100%', maxWidth: 'none' }}
+              className="w-full h-full object-cover filter contrast-90 brightness-95"
             />
             <span className="absolute top-4 left-4 bg-stone-900/90 text-white font-bold text-xs px-3.5 py-1.5 rounded-full shadow-md z-10 uppercase tracking-wider border border-stone-700">
               Vorher: Neumodellage

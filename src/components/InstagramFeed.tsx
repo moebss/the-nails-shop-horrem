@@ -71,13 +71,13 @@ export default function InstagramFeed() {
                 </div>
                 <div className="flex items-center gap-2.5 text-stone-600">
                   <Phone className="w-4 h-4 text-[#b36b67] shrink-0" />
-                  <a href="tel:01721234567" className="hover:text-stone-900 font-semibold underline">
-                    0172 1234567
+                  <a href="tel:015129429936" className="hover:text-stone-900 font-semibold underline">
+                    0151 29429936
                   </a>
                 </div>
                 <div className="flex items-center gap-2.5 text-stone-600">
                   <MapPin className="w-4 h-4 text-[#b36b67] shrink-0" />
-                  <span>Hauptstraße 18, 50169 Kerpen-Horrem</span>
+                  <span>Bahnhofstraße 2, 50169 Kerpen-Horrem</span>
                 </div>
               </div>
             </div>
