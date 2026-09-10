@@ -69,11 +69,11 @@ export default function ServicePrices({ onOpenContact }: ServicePricesProps) {
   ];
 
   return (
-    <section id="services" className="py-24 bg-[#faf7f2] border-b border-[#ede4d6]">
+    <section id="services" className="py-12 sm:py-16 bg-[#faf7f2] border-b border-[#ede4d6]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Section Header */}
-        <div className="text-center max-w-3xl mx-auto mb-16 space-y-4">
+        <div className="text-center max-w-3xl mx-auto mb-8 sm:mb-10 space-y-3">
           <span className="text-xs font-semibold tracking-widest text-[#b36b67] uppercase bg-[#ffffff] border border-[#ede4d6] px-3.5 py-1.5 rounded-full inline-block">
             Behandlungen & Preise
           </span>
@@ -168,7 +168,7 @@ export default function ServicePrices({ onOpenContact }: ServicePricesProps) {
         </div>
 
         {/* Global Consultation Banner */}
-        <div className="mt-14 bg-[#ffffff] border border-[#ede4d6] p-6 sm:p-8 rounded-3xl flex flex-col sm:flex-row items-center justify-between gap-6 shadow-xs">
+        <div className="mt-8 sm:mt-10 bg-[#ffffff] border border-[#ede4d6] p-6 sm:p-8 rounded-3xl flex flex-col sm:flex-row items-center justify-between gap-6 shadow-xs">
           <div className="space-y-1 text-center sm:text-left">
             <h4 className="font-serif text-xl sm:text-2xl font-normal text-stone-900">
               Spontan Zeit für schöne Nägel? <span className="text-[#b36b67]">Walk-In Termine möglich!</span>

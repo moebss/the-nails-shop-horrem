@@ -32,11 +32,11 @@ export default function FAQ() {
   ];
 
   return (
-    <section id="faq" className="py-24 bg-[#faf7f2] border-b border-[#ede4d6]">
+    <section id="faq" className="py-12 sm:py-16 bg-[#faf7f2] border-b border-[#ede4d6]">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Section Header */}
-        <div className="text-center max-w-2xl mx-auto mb-14 space-y-4">
+        <div className="text-center max-w-2xl mx-auto mb-8 sm:mb-10 space-y-3">
           <div className="inline-flex items-center gap-2 bg-[#ffffff] border border-[#ede4d6] px-4 py-1.5 rounded-full text-xs font-semibold uppercase tracking-widest text-[#b36b67] shadow-xs">
             <HelpCircle className="w-3.5 h-3.5 text-[#b36b67]" />
             <span>Häufig Gestellte Fragen</span>
@@ -91,7 +91,7 @@ export default function FAQ() {
         </div>
 
         {/* Question Footer Card */}
-        <div className="mt-12 bg-[#ffffff] border border-[#ede4d6] p-6 rounded-2xl text-center space-y-3 shadow-xs">
+        <div className="mt-8 sm:mt-10 bg-[#ffffff] border border-[#ede4d6] p-6 rounded-2xl text-center space-y-3 shadow-xs">
           <p className="font-serif text-lg font-normal text-stone-900">
             Haben Sie eine andere Frage oder speziellen Wunsch?
           </p>

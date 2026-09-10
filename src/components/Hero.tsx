@@ -7,7 +7,7 @@ interface HeroProps {
 
 export default function Hero({ onOpenContact }: HeroProps) {
   return (
-    <section id="hero" className="relative min-h-screen w-full flex items-center justify-center overflow-hidden bg-[#faf7f2] pt-32 pb-20 sm:pt-36 sm:pb-24 border-b border-[#ede4d6]">
+    <section id="hero" className="relative w-full flex items-center justify-center overflow-hidden bg-[#faf7f2] pt-24 pb-12 sm:pt-28 sm:pb-16 border-b border-[#ede4d6]">
       
       {/* 100vh Full Bleed Boutique Photography with Soft Warm Linen Overlay */}
       <div className="absolute inset-0 z-0">
@@ -21,7 +21,7 @@ export default function Hero({ onOpenContact }: HeroProps) {
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-[#f4dedd]/50 via-transparent to-transparent pointer-events-none" />
       </div>
 
-      <div className="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 w-full text-center space-y-8">
+      <div className="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 w-full text-center space-y-6">
         
         {/* Eyebrow Pill */}
         <div className="inline-flex items-center gap-2.5 bg-[#ffffff]/90 border border-[#ede4d6] px-4 py-2 rounded-full text-xs font-semibold uppercase tracking-widest text-[#b36b67] shadow-xs backdrop-blur-md">
@@ -71,7 +71,7 @@ export default function Hero({ onOpenContact }: HeroProps) {
         </div>
 
         {/* High-Impact Metric Strip */}
-        <div className="pt-12 grid grid-cols-2 md:grid-cols-4 gap-4 text-center border-t border-[#ede4d6] max-w-4xl mx-auto">
+        <div className="pt-6 sm:pt-8 grid grid-cols-2 md:grid-cols-4 gap-4 text-center border-t border-[#ede4d6] max-w-4xl mx-auto">
           <div className="bg-[#ffffff]/80 backdrop-blur-sm p-4 rounded-2xl border border-[#ede4d6] shadow-xs">
             <div className="flex items-center justify-center gap-1 text-[#b36b67] mb-1">
               {[...Array(5)].map((_, i) => (

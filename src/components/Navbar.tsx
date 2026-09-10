@@ -36,9 +36,8 @@ export default function Navbar({ onOpenContact }: NavbarProps) {
           <a href="#services" className="hover:text-[#b36b67] transition-colors whitespace-nowrap">Behandlungen</a>
           <a href="#ueber-uns" className="hover:text-[#b36b67] transition-colors whitespace-nowrap">Über Uns</a>
           <a href="#transformation" className="hover:text-[#b36b67] transition-colors whitespace-nowrap">Vorher / Nachher</a>
-          <a href="#instagram" className="hover:text-[#b36b67] transition-colors whitespace-nowrap">Lookbook</a>
+          <a href="#instagram" className="hover:text-[#b36b67] transition-colors whitespace-nowrap">Instagram</a>
           <a href="#bewertungen" className="hover:text-[#b36b67] transition-colors whitespace-nowrap">Bewertungen</a>
-          <a href="#rechner" className="hover:text-[#b36b67] transition-colors whitespace-nowrap">Preis-Rechner</a>
           <a href="#faq" className="hover:text-[#b36b67] transition-colors whitespace-nowrap">FAQ</a>
         </nav>
 
@@ -80,9 +79,8 @@ export default function Navbar({ onOpenContact }: NavbarProps) {
           <a href="#services" onClick={handleNavClick} className="block py-2.5 px-3 rounded-xl hover:bg-white hover:text-[#b36b67] transition-colors">Behandlungen</a>
           <a href="#ueber-uns" onClick={handleNavClick} className="block py-2.5 px-3 rounded-xl hover:bg-white hover:text-[#b36b67] transition-colors">Über Uns</a>
           <a href="#transformation" onClick={handleNavClick} className="block py-2.5 px-3 rounded-xl hover:bg-white hover:text-[#b36b67] transition-colors">Vorher / Nachher</a>
-          <a href="#instagram" onClick={handleNavClick} className="block py-2.5 px-3 rounded-xl hover:bg-white hover:text-[#b36b67] transition-colors">Lookbook</a>
+          <a href="#instagram" onClick={handleNavClick} className="block py-2.5 px-3 rounded-xl hover:bg-white hover:text-[#b36b67] transition-colors">Instagram</a>
           <a href="#bewertungen" onClick={handleNavClick} className="block py-2.5 px-3 rounded-xl hover:bg-white hover:text-[#b36b67] transition-colors">Bewertungen</a>
-          <a href="#rechner" onClick={handleNavClick} className="block py-2.5 px-3 rounded-xl hover:bg-white hover:text-[#b36b67] transition-colors">Preis-Rechner</a>
           <a href="#faq" onClick={handleNavClick} className="block py-2.5 px-3 rounded-xl hover:bg-white hover:text-[#b36b67] transition-colors">FAQ</a>
 
           <div className="pt-4 border-t border-[#ede4d6] flex flex-col gap-2.5">

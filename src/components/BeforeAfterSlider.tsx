@@ -6,10 +6,10 @@ export default function BeforeAfterSlider() {
   const [sliderPos, setSliderPos] = useState(50);
 
   return (
-    <section id="transformation" className="py-24 bg-[#faf7f2] border-b border-[#ede4d6]">
+    <section id="transformation" className="py-12 sm:py-16 bg-[#faf7f2] border-b border-[#ede4d6]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
-        <div className="text-center max-w-3xl mx-auto mb-12 space-y-3">
+        <div className="text-center max-w-3xl mx-auto mb-6 sm:mb-8 space-y-3">
           <span className="text-xs font-semibold tracking-widest text-[#b36b67] uppercase bg-[#ffffff] border border-[#ede4d6] px-3.5 py-1.5 rounded-full inline-block">
             Nail-Transformation
           </span>

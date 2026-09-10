@@ -4,8 +4,8 @@ interface FooterProps {
 
 export default function Footer({ onOpenLegal }: FooterProps) {
   return (
-    <footer className="bg-[#ffffff] text-stone-600 py-14 px-4 sm:px-8 border-t border-[#ede4d6] text-xs">
-      <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-8 mb-10">
+    <footer className="bg-[#ffffff] text-stone-600 py-10 sm:py-12 px-4 sm:px-8 border-t border-[#ede4d6] text-xs">
+      <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-8 mb-6 sm:mb-8">
         
         {/* Col 1 */}
         <div className="space-y-3">

@@ -33,11 +33,11 @@ export default function GoogleReviews() {
   ];
 
   return (
-    <section id="bewertungen" className="py-24 bg-[#faf7f2] border-b border-[#ede4d6]">
+    <section id="bewertungen" className="py-12 sm:py-16 bg-[#faf7f2] border-b border-[#ede4d6]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Header */}
-        <div className="text-center max-w-3xl mx-auto mb-16 space-y-4">
+        <div className="text-center max-w-3xl mx-auto mb-8 sm:mb-10 space-y-3">
           <div className="inline-flex items-center gap-2 bg-[#ffffff] border border-[#ede4d6] px-4 py-1.5 rounded-full shadow-xs">
             <span className="text-[#b36b67] font-bold text-sm">G</span>
             <span className="text-xs font-semibold text-stone-700 uppercase tracking-widest">Google Kundenstimmen</span>
@@ -97,7 +97,7 @@ export default function GoogleReviews() {
         </div>
 
         {/* Google Maps Link CTA */}
-        <div className="mt-14 text-center">
+        <div className="mt-8 sm:mt-10 text-center">
           <a
             href="https://maps.google.com/?q=The+Nails+Shop+Bahnhofstraße+2+50169+Kerpen"
             target="_blank"

@@ -6,7 +6,6 @@ import AboutUs from './components/AboutUs';
 import BeforeAfterSlider from './components/BeforeAfterSlider';
 import InstagramFeed from './components/InstagramFeed';
 import GoogleReviews from './components/GoogleReviews';
-import CostEstimator from './components/CostEstimator';
 import FAQ from './components/FAQ';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
@@ -33,7 +32,6 @@ export default function App() {
         <BeforeAfterSlider />
         <InstagramFeed />
         <GoogleReviews />
-        <CostEstimator onOpenContact={scrollToContact} />
         <FAQ />
         <Contact />
       </main>

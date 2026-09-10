@@ -3,10 +3,10 @@ import studioImg from '../images/studio_interior.jpg';
 
 export default function AboutUs() {
   return (
-    <section id="ueber-uns" className="py-24 bg-[#faf7f2] border-b border-[#ede4d6]">
+    <section id="ueber-uns" className="py-12 sm:py-16 bg-[#faf7f2] border-b border-[#ede4d6]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
           
           {/* Studio Image Column */}
           <div className="relative">

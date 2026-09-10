@@ -25,13 +25,13 @@ export default function Contact() {
   };
 
   return (
-    <section id="kontakt" className="py-24 bg-[#faf7f2] border-b border-[#ede4d6]">
+    <section id="kontakt" className="py-12 sm:py-16 bg-[#faf7f2] border-b border-[#ede4d6]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10 items-start">
           
           {/* Left Info Column */}
-          <div className="lg:col-span-5 space-y-8">
+          <div className="lg:col-span-5 space-y-6">
             <div className="space-y-4">
               <span className="inline-flex items-center gap-2 text-xs font-semibold tracking-widest text-[#b36b67] uppercase bg-[#ffffff] border border-[#ede4d6] px-4 py-1.5 rounded-full shadow-xs">
                 <MapPin className="w-3.5 h-3.5 text-[#b36b67]" />
