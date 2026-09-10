@@ -8,7 +8,7 @@ export default function TrustStrip() {
         <div className="flex flex-col items-center gap-1.5">
           <MapPin className="w-5 h-5 text-stone-700" />
           <span className="text-xs font-bold text-stone-900">Zentral in Horrem</span>
-          <span className="text-[11px] text-stone-500">Hauptstraße, 50169 Kerpen</span>
+          <span className="text-[11px] text-stone-500">Bahnhofstraße 2, Kerpen</span>
         </div>
 
         <div className="flex flex-col items-center gap-1.5">

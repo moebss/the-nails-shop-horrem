@@ -1,4 +1,4 @@
-import { Star, CheckCircle, ExternalLink } from 'lucide-react';
+import { Star, CheckCircle, ExternalLink, MessageCircle } from 'lucide-react';
 
 export default function GoogleReviews() {
   const reviews = [
@@ -20,7 +20,7 @@ export default function GoogleReviews() {
       name: 'Christina R.',
       time: 'vor 3 Wochen',
       rating: 5,
-      text: 'Pediküre mit Gel-Zehennägeln war einfach Traumurlaub für die Füße. Sehr schönes Boutique-Ambiente und absolut Hygiene auf höchstem Niveau.',
+      text: 'Pediküre mit Gel-Zehennägeln war einfach Traumurlaub für die Füße. Sehr schönes Boutique-Ambiente und absolute Hygiene auf höchstem Niveau.',
       verified: true
     },
     {
@@ -33,25 +33,25 @@ export default function GoogleReviews() {
   ];
 
   return (
-    <section id="bewertungen" className="py-20 bg-[#fcfaf7] border-b border-stone-200/80">
+    <section id="bewertungen" className="py-24 bg-[#faf7f2] border-b border-[#ede4d6]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Header */}
         <div className="text-center max-w-3xl mx-auto mb-16 space-y-4">
-          <div className="inline-flex items-center gap-2 bg-[#f4efe8] border border-[#e5d9c7] px-4 py-1.5 rounded-full">
-            <span className="text-[#d97736] font-bold text-sm">G</span>
-            <span className="text-xs font-semibold text-stone-700 uppercase tracking-widest">Google Rezensionen</span>
+          <div className="inline-flex items-center gap-2 bg-[#ffffff] border border-[#ede4d6] px-4 py-1.5 rounded-full shadow-xs">
+            <span className="text-[#b36b67] font-bold text-sm">G</span>
+            <span className="text-xs font-semibold text-stone-700 uppercase tracking-widest">Google Kundenstimmen</span>
           </div>
 
-          <h2 className="font-serif text-3xl sm:text-4xl lg:text-5xl font-normal text-stone-900 leading-tight">
-            Das Sagen Unsere Kundinnen
+          <h2 className="font-serif text-4xl sm:text-5xl font-normal text-stone-900 leading-tight">
+            Begeisterte Kundinnen in Horrem
           </h2>
 
           <div className="flex items-center justify-center gap-2 text-amber-500">
             {[...Array(5)].map((_, i) => (
               <Star key={i} className="w-5 h-5 fill-amber-400 text-amber-400" />
             ))}
-            <span className="font-serif font-bold text-stone-900 text-lg ml-1">4.8 von 5.0</span>
+            <span className="font-serif font-bold text-stone-900 text-lg ml-1">4.9 von 5.0</span>
             <span className="text-xs text-stone-500">(über 100+ verifizierte Bewertungen)</span>
           </div>
         </div>
@@ -59,21 +59,24 @@ export default function GoogleReviews() {
         {/* Reviews Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {reviews.map((r, idx) => (
-            <div key={idx} className="bg-[#f7f3ed] border border-[#e8ded1] rounded-2xl p-6 flex flex-col justify-between space-y-4 hover:border-amber-400/60 transition-colors shadow-xs">
-              <div className="space-y-3">
+            <div
+              key={idx}
+              className="bg-[#ffffff] border border-[#ede4d6] rounded-3xl p-6 sm:p-7 flex flex-col justify-between space-y-4 hover:border-[#b36b67]/40 transition-all shadow-xs hover:shadow-md"
+            >
+              <div className="space-y-3.5">
                 <div className="flex items-center justify-between">
-                  <div className="flex items-center gap-2.5">
-                    <div className="w-9 h-9 rounded-full bg-amber-100 border border-amber-200 text-amber-900 font-bold flex items-center justify-center text-sm font-serif">
+                  <div className="flex items-center gap-3">
+                    <div className="w-10 h-10 rounded-full bg-[#f4dedd] text-[#b36b67] font-serif font-bold flex items-center justify-center text-sm">
                       {r.name[0]}
                     </div>
                     <div>
                       <span className="font-serif font-bold text-stone-900 text-sm block">{r.name}</span>
-                      <span className="text-[10px] text-stone-500 block">{r.time}</span>
+                      <span className="text-[11px] text-stone-400 block">{r.time}</span>
                     </div>
                   </div>
                   {r.verified && (
-                    <span className="inline-flex items-center gap-1 text-[10px] text-emerald-800 font-semibold bg-emerald-100 border border-emerald-200 px-2 py-0.5 rounded-full">
-                      <CheckCircle className="w-3 h-3 text-emerald-700" />
+                    <span className="inline-flex items-center gap-1 text-[10px] text-emerald-700 font-semibold bg-emerald-50 border border-emerald-200 px-2.5 py-0.5 rounded-full">
+                      <CheckCircle className="w-3 h-3 text-emerald-600" />
                       <span>Verifiziert</span>
                     </span>
                   )}
@@ -85,7 +88,7 @@ export default function GoogleReviews() {
                   ))}
                 </div>
 
-                <p className="text-xs text-stone-700 leading-relaxed font-normal">
+                <p className="text-xs text-stone-600 leading-relaxed font-normal">
                   "{r.text}"
                 </p>
               </div>
@@ -94,15 +97,15 @@ export default function GoogleReviews() {
         </div>
 
         {/* Google Maps Link CTA */}
-        <div className="mt-12 text-center">
+        <div className="mt-14 text-center">
           <a
             href="https://maps.google.com/?q=The+Nails+Shop+Bahnhofstraße+2+50169+Kerpen"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 bg-stone-900 hover:bg-stone-800 text-stone-50 font-bold text-xs px-6 py-3 rounded-full transition-all uppercase tracking-wider shadow-xs"
+            className="inline-flex items-center gap-2.5 bg-[#ffffff] hover:bg-[#faf7f2] text-stone-900 border border-[#ede4d6] hover:border-[#b36b67]/40 font-bold text-xs px-8 py-4 rounded-full transition-all uppercase tracking-wider shadow-xs hover:shadow-md cursor-pointer"
           >
             <span>Alle 100+ Bewertungen auf Google lesen</span>
-            <ExternalLink className="w-3.5 h-3.5 text-amber-300" />
+            <ExternalLink className="w-3.5 h-3.5 text-[#b36b67]" />
           </a>
         </div>
 

@@ -26,7 +26,7 @@ export default function Hero({ onOpenContact }: HeroProps) {
         {/* Eyebrow Pill */}
         <div className="inline-flex items-center gap-2.5 bg-[#ffffff]/90 border border-[#ede4d6] px-4 py-2 rounded-full text-xs font-semibold uppercase tracking-widest text-[#b36b67] shadow-xs backdrop-blur-md">
           <Sparkles className="w-3.5 h-3.5 text-[#b36b67]" />
-          <span>BOUTIQUE NAGELSTUDIO • HAUPTSTRASSE 18 • KERPEN-HORREM</span>
+          <span>BOUTIQUE NAGELSTUDIO • BAHNHOFSTRASSE 2 • KERPEN-HORREM</span>
         </div>
 
         {/* Massive Fraunces Display Headline */}
@@ -100,7 +100,7 @@ export default function Hero({ onOpenContact }: HeroProps) {
               <MapPin className="w-4 h-4 text-[#b36b67]" />
               <span>Horrem</span>
             </span>
-            <span className="text-[11px] text-stone-500 font-semibold uppercase tracking-wider">Hauptstraße 18</span>
+            <span className="text-[11px] text-stone-500 font-semibold uppercase tracking-wider">Bahnhofstr. 2</span>
           </div>
         </div>
 

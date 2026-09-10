@@ -65,7 +65,7 @@ export default function Footer({ onOpenLegal }: FooterProps) {
           © {new Date().getFullYear()} The Nails Shop Horrem • Alle Rechte vorbehalten.
         </div>
         <div className="flex items-center gap-4">
-          <span className="text-stone-500">Hauptstraße 18 • 50169 Kerpen</span>
+          <span className="text-stone-500">Bahnhofstraße 2 • 50169 Kerpen-Horrem</span>
         </div>
       </div>
     </footer>

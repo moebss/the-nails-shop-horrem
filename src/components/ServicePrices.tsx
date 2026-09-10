@@ -174,16 +174,16 @@ export default function ServicePrices({ onOpenContact }: ServicePricesProps) {
               Spontan Zeit für schöne Nägel? <span className="text-[#b36b67]">Walk-In Termine möglich!</span>
             </h4>
             <p className="text-stone-500 text-xs sm:text-sm">
-              Kommen Sie einfach in der Hauptstraße 18 in Horrem vorbei oder reservieren Sie bequem online.
+              Kommen Sie einfach in der Bahnhofstraße 2 in Kerpen-Horrem vorbei oder reservieren Sie bequem vorab.
             </p>
           </div>
 
           <div className="flex items-center gap-3 shrink-0">
             <a
-              href="tel:01721234567"
+              href="tel:015129429936"
               className="bg-[#faf7f2] hover:bg-[#f5f0e6] text-stone-800 border border-[#ede4d6] px-5 py-3.5 rounded-full text-xs font-bold uppercase tracking-wider transition-colors"
             >
-              0172 1234567
+              0151 29429936
             </a>
             <button
               onClick={onOpenContact}
