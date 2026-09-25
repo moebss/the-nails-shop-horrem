@@ -3,7 +3,6 @@ import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import ServicePrices from './components/ServicePrices';
 import AboutUs from './components/AboutUs';
-import BeforeAfterSlider from './components/BeforeAfterSlider';
 import InstagramFeed from './components/InstagramFeed';
 import GoogleReviews from './components/GoogleReviews';
 import FAQ from './components/FAQ';
@@ -29,7 +28,6 @@ export default function App() {
         <Hero onOpenContact={scrollToContact} />
         <ServicePrices onOpenContact={scrollToContact} />
         <AboutUs />
-        <BeforeAfterSlider onOpenContact={scrollToContact} />
         <InstagramFeed onOpenContact={scrollToContact} />
         <GoogleReviews />
         <FAQ />

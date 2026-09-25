@@ -35,7 +35,6 @@ export default function Navbar({ onOpenContact }: NavbarProps) {
         <nav className="hidden xl:flex items-center gap-6 text-xs font-semibold text-stone-700 uppercase tracking-wider">
           <a href="#services" className="hover:text-[#b36b67] transition-colors whitespace-nowrap">Behandlungen</a>
           <a href="#ueber-uns" className="hover:text-[#b36b67] transition-colors whitespace-nowrap">Über Uns</a>
-          <a href="#transformation" className="hover:text-[#b36b67] transition-colors whitespace-nowrap">Vorher / Nachher</a>
           <a href="#instagram" className="hover:text-[#b36b67] transition-colors whitespace-nowrap">Instagram</a>
           <a href="#bewertungen" className="hover:text-[#b36b67] transition-colors whitespace-nowrap">Bewertungen</a>
           <a href="#faq" className="hover:text-[#b36b67] transition-colors whitespace-nowrap">FAQ</a>
@@ -78,7 +77,6 @@ export default function Navbar({ onOpenContact }: NavbarProps) {
         <div className="xl:hidden bg-[#faf7f2] border-t border-[#ede4d6] px-4 py-6 space-y-4 font-semibold text-sm uppercase tracking-wider text-stone-800 mt-3 animate-in fade-in slide-in-from-top-2 shadow-xl rounded-b-2xl">
           <a href="#services" onClick={handleNavClick} className="block py-2.5 px-3 rounded-xl hover:bg-white hover:text-[#b36b67] transition-colors">Behandlungen</a>
           <a href="#ueber-uns" onClick={handleNavClick} className="block py-2.5 px-3 rounded-xl hover:bg-white hover:text-[#b36b67] transition-colors">Über Uns</a>
-          <a href="#transformation" onClick={handleNavClick} className="block py-2.5 px-3 rounded-xl hover:bg-white hover:text-[#b36b67] transition-colors">Vorher / Nachher</a>
           <a href="#instagram" onClick={handleNavClick} className="block py-2.5 px-3 rounded-xl hover:bg-white hover:text-[#b36b67] transition-colors">Instagram</a>
           <a href="#bewertungen" onClick={handleNavClick} className="block py-2.5 px-3 rounded-xl hover:bg-white hover:text-[#b36b67] transition-colors">Bewertungen</a>
           <a href="#faq" onClick={handleNavClick} className="block py-2.5 px-3 rounded-xl hover:bg-white hover:text-[#b36b67] transition-colors">FAQ</a>
