@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { Sparkles, ArrowRight } from 'lucide-react';
 
-import heroImg from '../images/hero_nails.jpg';
+import marbleGoldImg from '../images/nail_marble_gold.jpg';
 import portfolioImg from '../images/portfolio_nails.jpg';
 import gallery1 from '../images/gallery_1.jpg';
 import gallery2 from '../images/gallery_2.jpg';
@@ -36,11 +36,11 @@ export default function PortfolioGallery({ onOpenContact }: PortfolioGalleryProp
       desc: 'Makellose Modellage in Nude mit hochglänzendem Versiegler.'
     },
     {
-      title: 'Rose Gold Glitzer Akzente',
+      title: 'Rose Quartz & Blattgold Akzente',
       category: 'nailart',
-      img: heroImg,
+      img: marbleGoldImg,
       tag: 'Glamour',
-      desc: 'Handgemalte Details mit Glitzer-Highlights.'
+      desc: 'Handgemalte Details mit echten Blattgold-Highlights.'
     }
   ];
 
@@ -93,6 +93,8 @@ export default function PortfolioGallery({ onOpenContact }: PortfolioGalleryProp
                 <img
                   src={item.img}
                   alt={item.title}
+                  loading="lazy"
+                  decoding="async"
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                 />
                 <span className="absolute top-3 right-3 bg-stone-900/90 text-stone-50 font-bold text-[10px] uppercase tracking-wider px-3 py-1 rounded-full backdrop-blur-xs">

@@ -81,7 +81,7 @@ export default function ServicePrices({ onOpenContact }: ServicePricesProps) {
             Schöne Nägel & Beauty Spa
           </h2>
           <p className="text-stone-600 text-base sm:text-lg font-normal">
-            Erstklassige Produkte, schonende Arbeitsweise und transparente Festpreise ohne versteckte Kosten.
+            Transparente Festpreise, 4-Wochen Haltbarkeits-Garantie und schmerzfreie Fräsertechnik. Bringen Sie Ihr Wunschdesign von Instagram oder TikTok einfach mit!
           </p>
         </div>
 
@@ -102,6 +102,8 @@ export default function ServicePrices({ onOpenContact }: ServicePricesProps) {
                   <img
                     src={service.image}
                     alt={service.title}
+                    loading="lazy"
+                    decoding="async"
                     className="w-full h-full object-cover filter brightness-[0.96] contrast-[1.03] group-hover:scale-105 transition-transform duration-700"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent" />

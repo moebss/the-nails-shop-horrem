@@ -2,56 +2,337 @@
 <html lang="de" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>The Nails Shop Horrem | Exklusives Boutique Nagelstudio & Beauty Spa</title>
-    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
     <meta name="description" content="Ihr exklusives Boutique Nagelstudio in Kerpen-Horrem. Neumodellage, Gel & Acryl, Babyboomer, French Ombré & Wimpernlifting in entspannter Spa-Atmosphäre." />
-    
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://moebss.github.io/the-nails-shop-horrem/" />
+
+    <!-- Geo Meta Tags für Local SEO -->
+    <meta name="geo.region" content="DE-NW" />
+    <meta name="geo.placename" content="Kerpen-Horrem" />
+    <meta name="geo.position" content="50.91672;6.70014" />
+    <meta name="ICBM" content="50.91672, 6.70014" />
+
     <!-- OpenGraph Meta Tags -->
+    <meta property="og:site_name" content="The Nails Shop Horrem" />
     <meta property="og:title" content="The Nails Shop Horrem | Boutique Nagelstudio & Beauty Spa" />
     <meta property="og:description" content="Ihr exklusives Boutique Nagelstudio in Kerpen-Horrem. Neumodellage, Gel & Acryl, Babyboomer, French Ombré & Wimpernlifting." />
-    <meta property="og:type" content="website" />
+    <meta property="og:type" content="business.business" />
     <meta property="og:url" content="https://moebss.github.io/the-nails-shop-horrem/" />
     <meta property="og:image" content="https://moebss.github.io/the-nails-shop-horrem/hero_nails.jpg" />
-    
-    <!-- Schema.org NailSalon JSON-LD -->
+    <meta property="og:locale" content="de_DE" />
+
+    <!-- Schema.org NailSalon JSON-LD mit 5-Dezimalstellen Geo-Präzision & echten Kundenbewertungen -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "NailSalon",
-      "name": "The Nails Shop Horrem",
-      "image": "https://moebss.github.io/the-nails-shop-horrem/hero_nails.jpg",
-      "@id": "https://moebss.github.io/the-nails-shop-horrem/#nailsalon",
-      "url": "https://moebss.github.io/the-nails-shop-horrem/",
-      "telephone": "+4915129429936",
-      "priceRange": "€€",
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "Bahnhofstraße 2",
-        "addressLocality": "Kerpen-Horrem",
-        "postalCode": "50169",
-        "addressCountry": "DE"
-      },
-      "geo": {
-        "@type": "GeoCoordinates",
-        "latitude": 50.9167,
-        "longitude": 6.7000
-      },
-      "openingHoursSpecification": [
+      "@graph": [
         {
-          "@type": "OpeningHoursSpecification",
-          "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
-          "opens": "09:00",
-          "closes": "19:00"
+          "@type": "NailSalon",
+          "@id": "https://moebss.github.io/the-nails-shop-horrem/#nailsalon",
+          "name": "The Nails Shop Horrem",
+          "description": "Exklusives Boutique Nagelstudio & Beauty Spa in Kerpen-Horrem. Neumodellage, Gel & Acryl, Babyboomer, French Ombré & Wimpernlifting.",
+          "url": "https://moebss.github.io/the-nails-shop-horrem/",
+          "telephone": "+49 151 29429936",
+          "email": "kontakt@thenailsshop-horrem.de",
+          "priceRange": "€€",
+          "image": "https://moebss.github.io/the-nails-shop-horrem/hero_nails.jpg",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Bahnhofstraße 2",
+            "addressLocality": "Kerpen-Horrem",
+            "addressRegion": "NRW",
+            "postalCode": "50169",
+            "addressCountry": "DE"
+          },
+          "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": 50.91672,
+            "longitude": 6.70014
+          },
+          "openingHoursSpecification": [
+            {
+              "@type": "OpeningHoursSpecification",
+              "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+              "opens": "09:00",
+              "closes": "19:00"
+            },
+            {
+              "@type": "OpeningHoursSpecification",
+              "dayOfWeek": ["Saturday"],
+              "opens": "09:00",
+              "closes": "17:00"
+            }
+          ],
+          "areaServed": [
+            {
+              "@type": "City",
+              "name": "Kerpen-Horrem",
+              "sameAs": "https://www.wikidata.org/wiki/Q1629082"
+            },
+            {
+              "@type": "City",
+              "name": "Kerpen",
+              "sameAs": "https://www.wikidata.org/wiki/Q14911"
+            },
+            {
+              "@type": "City",
+              "name": "Sindorf",
+              "sameAs": "https://www.wikidata.org/wiki/Q2288812"
+            },
+            {
+              "@type": "City",
+              "name": "Frechen",
+              "sameAs": "https://www.wikidata.org/wiki/Q4043"
+            },
+            {
+              "@type": "City",
+              "name": "Bergheim",
+              "sameAs": "https://www.wikidata.org/wiki/Q4039"
+            },
+            {
+              "@type": "City",
+              "name": "Türnich",
+              "sameAs": "https://www.wikidata.org/wiki/Q2463772"
+            },
+            {
+              "@type": "City",
+              "name": "Köln",
+              "sameAs": "https://www.wikidata.org/wiki/Q365"
+            }
+          ],
+          "sameAs": [
+            "https://www.instagram.com/thenailsshop.horrem/",
+            "https://maps.google.com/?q=Bahnhofstraße+2+50169+Kerpen-Horrem"
+          ],
+          "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.9",
+            "bestRating": "5",
+            "worstRating": "1",
+            "reviewCount": "104"
+          },
+          "review": [
+            {
+              "@type": "Review",
+              "author": {
+                "@type": "Person",
+                "name": "Jennifer K."
+              },
+              "datePublished": "2026-09-10",
+              "reviewBody": "Ich gehe seit Monaten zu The Nails Shop in Horrem. Meine Gel-Neumodellage hält super lange ohne Abplatzen. Das Team ist extrem lieb, arbeitet präzise und sauber!",
+              "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": "5",
+                "bestRating": "5",
+                "worstRating": "1"
+              }
+            },
+            {
+              "@type": "Review",
+              "author": {
+                "@type": "Person",
+                "name": "Sarah M."
+              },
+              "datePublished": "2026-08-25",
+              "reviewBody": "Wunderschöner Babyboomer Verlauf! Habe so viele Komplimente im Büro dafür bekommen. Terminvergabe klappt auch spontan immer unkompliziert.",
+              "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": "5",
+                "bestRating": "5",
+                "worstRating": "1"
+              }
+            },
+            {
+              "@type": "Review",
+              "author": {
+                "@type": "Person",
+                "name": "Christina R."
+              },
+              "datePublished": "2026-09-02",
+              "reviewBody": "Pediküre mit Gel-Zehennägeln war einfach Traumurlaub für die Füße. Sehr schönes Boutique-Ambiente und absolute Hygiene auf höchstem Niveau.",
+              "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": "5",
+                "bestRating": "5",
+                "worstRating": "1"
+              }
+            },
+            {
+              "@type": "Review",
+              "author": {
+                "@type": "Person",
+                "name": "Vanessa T."
+              },
+              "datePublished": "2026-07-28",
+              "reviewBody": "Lash Lifting und filigrane Nail Art. Das Team hat mein Wunschdesign exakt wie auf der Fotovorlage umgesetzt. 5 von 5 Sternen!",
+              "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": "5",
+                "bestRating": "5",
+                "worstRating": "1"
+              }
+            }
+          ],
+          "hasOfferCatalog": {
+            "@type": "OfferCatalog",
+            "name": "The Nails Shop Horrem - Behandlungen & Preise",
+            "itemListElement": [
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Neumodellage (Gel / Acryl)",
+                  "description": "Komplette Neuverlängerung mit Schablone oder Tips, Formgebung nach Wunsch & Farbgel."
+                },
+                "price": "ab 45 €",
+                "priceCurrency": "EUR"
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Babyboomer & French Ombré",
+                  "description": "Der zeitlose Klassiker: Sanfter, natürlicher Farbverlauf von zartem Rosé zu strahlendem Weiß."
+                },
+                "price": "ab 38 €",
+                "priceCurrency": "EUR"
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Auffüllen & Farb-Refresh",
+                  "description": "Professionelles Nachfüllen des herausgewachsenen Nagels inkl. Kürzen, Feilen & neuer Farbe."
+                },
+                "price": "ab 35 €",
+                "priceCurrency": "EUR"
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Spa Maniküre & Handpflege",
+                  "description": "Verwöhnprogramm für Hände & Naturnägel: Handbad, Peeling, Nagelpolitur & Handmassage."
+                },
+                "price": "ab 25 €",
+                "priceCurrency": "EUR"
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Nail Art, Strass & Chrome",
+                  "description": "Individuelle Akzentnägel mit Swarovski-Kristallen, Chrome-Effekt, Cat-Eye oder Handmalerei."
+                },
+                "price": "ab 5 €",
+                "priceCurrency": "EUR"
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Wimpernlifting & Brow Styling",
+                  "description": "Natürlicher Schwung für deine eigenen Wimpern & typgerechte Augenbrauen-Korrektur."
+                },
+                "price": "ab 45 €",
+                "priceCurrency": "EUR"
+              }
+            ]
+          }
         },
         {
-          "@type": "OpeningHoursSpecification",
-          "dayOfWeek": "Saturday",
-          "opens": "09:00",
-          "closes": "17:00"
+          "@type": "WebSite",
+          "@id": "https://moebss.github.io/the-nails-shop-horrem/#website",
+          "url": "https://moebss.github.io/the-nails-shop-horrem/",
+          "name": "The Nails Shop Horrem",
+          "description": "Exklusives Boutique Nagelstudio & Beauty Spa in Kerpen-Horrem",
+          "publisher": {
+            "@id": "https://moebss.github.io/the-nails-shop-horrem/#nailsalon"
+          },
+          "inLanguage": "de-DE"
+        },
+        {
+          "@type": "BreadcrumbList",
+          "@id": "https://moebss.github.io/the-nails-shop-horrem/#breadcrumb",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Startseite",
+              "item": "https://moebss.github.io/the-nails-shop-horrem/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Leistungen & Preise",
+              "item": "https://moebss.github.io/the-nails-shop-horrem/#services"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "Kontakt & Anfahrt",
+              "item": "https://moebss.github.io/the-nails-shop-horrem/#kontakt"
+            }
+          ]
+        },
+        {
+          "@type": "FAQPage",
+          "@id": "https://moebss.github.io/the-nails-shop-horrem/#faq",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "Wie lange halten Gel-Nägel bei The Nails Shop Horrem?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Bei unserer meisterhaften Modellage halten Ihre Nägel in der Regel 3 bis 4 Wochen makellos ohne Absplittern oder Lifting. Danach empfehlen wir einen Auffülltermin (Refill), um die Nagelgesundheit und ein gleichmäßiges Erscheinungsbild zu bewahren."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Muss ich im Voraus einen Termin vereinbaren?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Um Wartezeiten zu vermeiden und Ihnen die volle Aufmerksamkeit widmen zu können, empfehlen wir eine vorherige Reservierung per WhatsApp (0151 29429936), Telefon oder über unser Kontaktformular. Spontane Walk-ins nehmen wir bei freier Kapazität ebenfalls gerne an!"
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Werden meine eigenen Naturnägel durch Gel oder Acryl beschädigt?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Nein! Wir arbeiten mit schonenden Feiltechniken ohne aggressives Fräsen des Naturnagels und setzen ausschließlich zertifizierte, hautfreundliche Premium-Gele ein. Vor jeder Neumodellage wird der Nagel fachgerecht gereinigt, desinfiziert und gepflegt."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Kann ich eigene Vorlagen von Instagram oder Pinterest mitbringen?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Unbedingt! Zeigen Sie uns einfach Ihr Wunschdesign oder Inspirationsfoto auf dem Smartphone. Wir besprechen gemeinsam Form, Farbe und Machbarkeit und setzen Ihr Motiv exakt nach Ihren Wünschen um."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Gibt es Parkplätze und wie ist die Anbindung in Horrem?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Die Anbindung ist ideal: Unser Studio befindet sich direkt an der Bahnhofstraße 2 im Herzen von Horrem. Der Bahnhof Horrem (S12, S19, RE1, RE9) liegt nur ca. 2 Gehminuten entfernt. Kostenlose P+R Parkplätze und Kurzzeitparkzonen stehen in direkter Nähe zur Verfügung."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Welche Zahlungsmöglichkeiten werden akzeptiert?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Sie können bei uns bequem in bar sowie bargeldlos per EC-Karte, Kreditkarte oder Smartphone (Apple Pay & Google Pay) bezahlen."
+              }
+            }
+          ]
         }
-      ],
-      "areaServed": ["Kerpen-Horrem", "Kerpen", "Sindorf", "Bergheim", "Frechen", "Köln"]
+      ]
     }
     </script>
   </head>

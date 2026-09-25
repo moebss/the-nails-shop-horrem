@@ -102,7 +102,10 @@ export default function LegalModals({ type, onClose }: LegalModalsProps) {
                 <strong>Kontakt & Terminanfragen:</strong> Wenn Sie uns per Anfrageformular oder WhatsApp kontaktieren, werden Ihre Angaben zwecks Bearbeitung der Anfrage bei uns gespeichert.
               </p>
               <p>
-                <strong>Schriftarten (Self-Hosted):</strong> Diese Seite nutzt lokal gehostete Schriftarten (@fontsource) ohne Verbindungen zu Drittanbietern wie Google Fonts.
+                <strong>Schriftarten (Self-Hosted):</strong> Diese Seite nutzt ausschließlich lokal gehostete Schriftarten (@fontsource) ohne Verbindungen zu externen Servern wie Google Fonts.
+              </p>
+              <p>
+                <strong>Instagram & Social Media (2-Klick-Lösung):</strong> Wir binden externe Feeds von Instagram (Meta Platforms Ireland Ltd.) standardmäßig blockiert ein. Erst wenn Sie den Live-Feed im Bereich 'Inspiration' aktiv per Klick freischalten, wird eine Verbindung zu den Servern von Instagram aufgebaut.
               </p>
             </>
           )}

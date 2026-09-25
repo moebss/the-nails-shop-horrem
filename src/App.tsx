@@ -23,14 +23,14 @@ export default function App() {
   };
 
   return (
-    <div className="min-h-screen bg-[#faf7f2] text-stone-800 flex flex-col font-sans selection:bg-[#d48b88] selection:text-white pb-16 sm:pb-0 overflow-x-hidden">
+    <div className="min-h-screen bg-[#faf7f2] text-stone-800 flex flex-col font-sans selection:bg-[#d48b88] selection:text-white pb-20 sm:pb-0 overflow-x-hidden">
       <Navbar onOpenContact={scrollToContact} />
       <main className="flex-grow">
         <Hero onOpenContact={scrollToContact} />
         <ServicePrices onOpenContact={scrollToContact} />
         <AboutUs />
-        <BeforeAfterSlider />
-        <InstagramFeed />
+        <BeforeAfterSlider onOpenContact={scrollToContact} />
+        <InstagramFeed onOpenContact={scrollToContact} />
         <GoogleReviews />
         <FAQ />
         <Contact />

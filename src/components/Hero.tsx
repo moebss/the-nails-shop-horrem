@@ -13,7 +13,9 @@ export default function Hero({ onOpenContact }: HeroProps) {
       <div className="absolute inset-0 z-0">
         <img
           src={heroImg}
-          alt="The Nails Shop Horrem Atmosphäre"
+          alt="The Nails Shop Horrem Salon Atmosphäre"
+          fetchPriority="high"
+          decoding="async"
           className="w-full h-full object-cover object-center filter brightness-[0.92] contrast-[1.05] opacity-35 scale-105"
         />
         {/* Soft Warm Linen Gradient Overlay & Rose Glow */}
@@ -35,9 +37,9 @@ export default function Hero({ onOpenContact }: HeroProps) {
           <span className="text-[#b36b67]">sinnliche Eleganz</span>.
         </h1>
 
-        {/* Atmospheric Subtitle */}
+        {/* Atmospheric Subtitle with Concrete Guarantees */}
         <p className="text-stone-600 text-base sm:text-xl lg:text-2xl font-normal leading-relaxed max-w-3xl mx-auto">
-          Willkommen bei <strong className="text-stone-900 font-semibold">The Nails Shop</strong> in Kerpen-Horrem. Wir zaubern makellose Neumodellagen, zartes Babyboomer-Design, langanhaltende Gel-Nägel & wohltuende Spa-Maniküre.
+          Willkommen bei <strong className="text-stone-900 font-semibold">The Nails Shop</strong> in Kerpen-Horrem. Makellose Neumodellagen mit 4 Wochen Haltbarkeitsgarantie, schmerzfreie Fräsertechnik & Wunschdesign nach Foto von Instagram & TikTok.
         </p>
 
         {/* Action CTAs */}
